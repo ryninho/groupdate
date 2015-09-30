@@ -1,7 +1,7 @@
 -- day w/ time zone
 
 
-CREATE OR REPLACE FUNCTION gd_week(timestamp TIMESTAMP, time_zone_name TEXT)
+CREATE OR REPLACE FUNCTION gd_day(timestamp TIMESTAMP, time_zone_name TEXT)
     RETURNS TIMESTAMP
 STABLE
 AS $$
