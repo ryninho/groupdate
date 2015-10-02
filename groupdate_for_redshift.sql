@@ -9,7 +9,7 @@ AS $$
     import pytz
     from pytz import timezone
     if timestamp_col.tzinfo is None:
-      timestamp_col = timestamp.replace(tzinfo=pytz.utc)
+      timestamp_col = timestamp_col.replace(tzinfo=pytz.utc)
     local_tz = timezone(time_zone_name)
     local_time = timestamp_col.astimezone(local_tz)
     local_date = local_time.replace(hour=0, minute=0, second=0, microsecond=0)
