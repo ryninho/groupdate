@@ -17,4 +17,5 @@ from datetime import datetime
 
 
 print gd_day(datetime.strptime('2015-09-30 04:40:48', '%Y-%m-%d %H:%M:%S'), 'America/Los_Angeles')
+print type(gd_day(datetime.strptime('2015-09-30 04:40:48', '%Y-%m-%d %H:%M:%S'), 'America/Los_Angeles'))
 
